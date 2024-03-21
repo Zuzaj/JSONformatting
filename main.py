@@ -1,6 +1,8 @@
 
 import json
 import re
+import sys
+from antlr4 import FileStream
 
 #Function to check if Resource field consists of exactly 1 asterisk
 def checkResource(filePath: str) -> bool:
@@ -61,14 +63,14 @@ format_template = {
 }
 
 
-#Example of usage
+def main(argv):
+    if len(argv) < 2 or argv[1][-5:] != ".json":
+        raise ValueError("Pass *.json file as parameter")
+    input_file = argv[1]
+    print(checkResource(input_file))
 
-#File with Resource = '*'
-testFile1 = "testFile1.json"
 
-#File with Resource != '*'
-testFile2 =  "testFile2.json"
 
-print(f'File has * in Resource field so returns {checkResource(testFile1)}')
-print(f'File doesn\'t have * in Resource field so returns {checkResource(testFile2)}')
+if __name__ == '__main__':
+    main(sys.argv)
 
