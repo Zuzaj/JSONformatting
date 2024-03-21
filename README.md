@@ -2,7 +2,7 @@
 
 Presented program is dedicated to check if JSON file's  *Resource* field consists of one asterisk.
 
-## Returned value
+## Output
 Program returns:
 -  **False** if an input JSON *Resource* field contains a single asterisk
 -  **True** in any other case
