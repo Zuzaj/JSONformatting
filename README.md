@@ -2,13 +2,14 @@
 
 Presented program is dedicated to check if JSON file's  *Resource* field consists of one asterisk.
 
+## Input
+Only files in proper [AWS::IAM::Role Policy formatting](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-role-policy.html) will be tested correctly. 
+
 ## Output
 Program returns:
 -  **False** if an input JSON *Resource* field contains a single asterisk
 -  **True** in any other case
 
-
-### Only files in proper [AWS::IAM::Role Policy formatting](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-role-policy.html) will be tested correctly. 
 
 
 
