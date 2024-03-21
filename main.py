@@ -2,7 +2,6 @@
 import json
 import re
 import sys
-from antlr4 import FileStream
 
 #Function to check if Resource field consists of exactly 1 asterisk
 def checkResource(filePath: str) -> bool:
