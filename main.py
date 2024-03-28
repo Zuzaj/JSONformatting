@@ -72,15 +72,13 @@ def verify_format(filePath: str) -> bool:
 
 def main(argv):
     try:
-        input_file = argv
+        input_file = argv[1]
     except:
         raise ValueError("Pass *.json file as parameter")
     print(check_resource(input_file))
 
 
 
-# if __name__ == '__main__':
-#     main(sys.argv)
+if __name__ == '__main__':
+    main(sys.argv)
 
-
-main("tests/testFiles/testFile2.json")
