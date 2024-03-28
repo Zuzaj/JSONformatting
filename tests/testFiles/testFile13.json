@@ -1,0 +1,20 @@
+{
+    "PolicyName": "root",
+    "PolicyDocument": {
+        "Version": "2012-10-17",
+        "Statement": [
+            {
+            "Sid_": "IamListAccess",
+            "Effect": "Allow",
+            "Action": [
+                "iam:ListRoles",
+                "iam:ListUsers"
+            ],
+            "Resource": [
+                "arn:aws:s3:::confidential-data",
+                "arn:aws:s3:::confidential-data/*"
+              ]
+            }
+        ]
+    }
+}

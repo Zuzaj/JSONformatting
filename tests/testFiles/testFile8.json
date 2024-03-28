@@ -1,0 +1,16 @@
+{
+    "PolicyName": "root",
+    "PolicyDocument": {
+        "Statement": [
+            {
+            "Sid": "IamListAccess",
+            "Effect": "Allow",
+            "Action": [
+                "iam:ListRoles",
+                "iam:ListUsers"
+            ],
+            "Resource": "*"
+            }
+        ]
+    }
+}

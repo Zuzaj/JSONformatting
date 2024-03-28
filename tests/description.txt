@@ -1,0 +1,20 @@
+1 - not json file
+2- misspelling in PolicyName
+3 - misspelling in PolicyDocument
+4 - no PolicyDocument
+5 - data["PolicyName"] is type List
+6 - invalid char in PolicyName
+7 - PolicyDocument is not dict
+8 - different data["PolicyDocument"].keys() than template
+9 - type of data['PolicyDocument']["Statement"] is not List
+10 - data['PolicyDocument']["Statement"][i]["Effect"] other than ["Allow", "Deny"]
+11 - data['PolicyDocument']["Statement"][i].keys() are wrong
+12 - type(data['PolicyDocument']["Statement"][i]) is not dict 
+13 -  data['PolicyDocument']["Statement"][i].keys() are different
+14 - PolicyName empty
+15 - PolicyDocument empty
+16 - len(data["PolicyName"]) not between 1 and 128
+17 - correct file with Resource different from '*'
+18 - correct file with (at least one) Resource field equal '*'
+19 - correct file with Resource different from '*'
+
