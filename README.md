@@ -28,6 +28,17 @@ To have your file in .json format tested run following commands:
 python main.py [PATH TO .json FILE]
 ```
 
-The verification result will be shown in your terminal.
+The verification result will be shown in your terminal. When you are in JSONformatting folder path should look like this:
+```
+"tests/testFiles/*"
+```
 
-To test the program's robustness use test files available in **testFiles** folder
+To test the program's robustness use test files available in **testFiles** folder. 
+Unit tests are available in unittests.py file. To run them use command:
+```
+#Firstly install pytest package
+pip install pytest
+
+#Run available tests
+pytest unittests.py
+```
